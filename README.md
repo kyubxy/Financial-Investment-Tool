@@ -2,6 +2,10 @@
 [![Frontend CI](https://github.com/ParasX1/Financial-Investment-Tool/actions/workflows/node.js.yml/badge.svg)](https://github.com/ParasX1/Financial-Investment-Tool/actions/workflows/node.js.yml)
 [![Backend CI](https://github.com/ParasX1/Financial-Investment-Tool/actions/workflows/python-app.yml/badge.svg)](https://github.com/ParasX1/Financial-Investment-Tool/actions/workflows/python-app.yml)
 
+# Hello fellow techlauncher student
+This is not the main assignment fork, this is my own test fork that I'm using to try stuff out 
+with other technologies, I'm not in your group. pls ignore, and good luck!
+
 The Financial Investment Tool is a web-based platform for investors and portfolio managers. It allows users to analyze stock data, calculate performance metrics, and optimize portfolios. Key features include performance metrics, correlation analysis, and machine learning for predictive analytics, all with an intuitive interface.
 
 ## Getting Started
