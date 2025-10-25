@@ -11,36 +11,22 @@ with other technologies, I'm not in your group. pls ignore, and good luck!
 The Financial Investment Tool is a web-based platform for investors and portfolio managers. It allows users to analyze stock data, calculate performance metrics, and optimize portfolios. Key features include performance metrics, correlation analysis, and machine learning for predictive analytics, all with an intuitive interface.
 
 ## Getting Started
-We use a monorepo to hold both our frontend and backend code.
+FIT. is entirely containerised, you can hack away at it directly off of a locally run k8s cluster. Tilt is used to automatically rebuild
+containers when their dependent files have changed. 
 
-**Frontend**
+Install the following to get started
+- Docker
+- Some k8s dev solution - minikube works fine
+- [tilt](https://tilt.dev/)
 
-We use npm and nextjs to run our friend. In the `client` folder, use
-
-```
-npm install
-```
-
-to install/update project dependencies and
+Then simply run the tilt stack and wait for everything to install and start up. 
 
 ```
-npm run dev
+tilt up
 ```
+Any changes you make to the client and server `src/` folders should automatically hot-reload the pods.
 
-to compile and host the frontend locally.
-
-1. Copy client/env.example and paste to client/.env.local
-2. Enter the your newsapi key
-3. Using npm run dev to testing
-
-
-**Backend**
-
-We use flask to run our backend.
-In the `server` folder, use
-```
-python -m src.server
-```
+The k8s cluster running on your machine should include the entire FIT. stack.
 
 ## Testing
 

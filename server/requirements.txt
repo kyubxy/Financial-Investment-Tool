@@ -1,0 +1,16 @@
+flask
+flask_cors
+joblib
+numpy
+opencv-contrib-python
+pandas
+pygame
+pytz
+scikit-learn
+scipy
+setuptools
+supabase
+threadpoolctl
+wheel
+yfinance
+matplotlib

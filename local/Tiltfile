@@ -1,0 +1,21 @@
+k8s_yaml('app.yaml')
+allow_k8s_contexts(['minikube', 'kind-kind'])
+
+k8s_resource('client', port_forwards='3000')
+k8s_resource('server', port_forwards='8080')
+
+docker_build(
+	'fit/client', 
+	context='../client',
+	live_update=[
+		sync('../client/src', '/app/src')
+	]
+)
+
+docker_build(
+	'fit/server', 
+	context='../server',
+	live_update=[
+		sync('../server/src', '/app/src')
+	]
+)

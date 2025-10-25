@@ -17,3 +17,4 @@ client/.idea
 
 server/.env
 
+server/src/__pycache__

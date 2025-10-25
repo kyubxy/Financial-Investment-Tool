@@ -32,6 +32,12 @@ def create_app():
 
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+    print('starting...')
+    @app.route("/api/ping", methods=["GET"])
+    def ping():
+        return jsonify({
+            "pong": "pong2"
+        }), 200
 
     # returns a list of stocks the user holds
     # takes the user id as input
@@ -231,5 +237,5 @@ def create_app():
 
 if __name__ == "__main__":
     app = create_app()
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=8080, host='0.0.0.0')
     
